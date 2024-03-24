@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /alexa/flashBriefing_web/
+
+RewriteRule ^new$ new.php [L]
+#RewriteRule ^create$ create.php [L]
+RewriteRule ^(\d{4}-\d{2}-\d{2})/([a-zA-Z0-9]+)$ dashboard.php?id=$2&date=$1 [L]
+RewriteRule ^(\d{4}-\d{2}-\d{2})/([a-zA-Z0-9]+)/view$ view.php?id=$2&date=$1 [L]
+#RewriteRule ^view/([a-zA-Z0-9]+)$ view.php?id=$1 [L]
+RewriteRule ^(\d{4}-\d{2}-\d{2})/([a-zA-Z0-9]+)/edit$ edit.php?id=$2&date=$1 [L]
+RewriteRule ^(\d{4}-\d{2}-\d{2})/([a-zA-Z0-9]+)/jsonRandom$ json.php?id=$2&date=$1&frequency=random&format=text [L]
+RewriteRule ^(\d{4}-\d{2}-\d{2})/([a-zA-Z0-9]+)/jsonRandomAudio$ json.php?id=$2&date=$1&frequency=random&format=audio [L]
+RewriteRule ^(\d{4}-\d{2}-\d{2})/([a-zA-Z0-9]+)/jsonOneDaily$ json.php?id=$2&date=$1&frequency=onceDaily&format=text [L]
+RewriteRule ^(\d{4}-\d{2}-\d{2})/([a-zA-Z0-9]+)/jsonOneDailyAudio$ json.php?id=$2&date=$1&frequency=onceDaily&format=audio [L]
+#RewriteRule ^(\d{4}-\d{2}-\d{2})/([a-zA-Z0-9]+)/save$ save.php [L]
+#RewriteRule ^edit/([a-zA-Z0-9]+)$ edit.php?id=$1 [L]
+#RewriteRule ^save$ save.php [L]
+#RewriteRule ^error/([a-zA-Z0-9]+)$ error.php?id=$1 [L]
