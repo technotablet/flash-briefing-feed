@@ -39,16 +39,21 @@ apt install php libapache2-mod-php apache2
   # Other directives...
 </Directory>
 ```
-5. Restart the Apache web server for the changes to take effect.
+5. **IMPORTANT** Modify `.htaccess` file and set the appropriate `RewriteBase` based on the folder where you have deployed the skill.
+```
+RewriteEngine On
+RewriteBase /flash-briefing-skill/
+```
+6. Restart the Apache web server for the changes to take effect.
 
-6. Upload the cloned repository files to your web server's document root or the desired directory.
+7. Upload the cloned repository files to your web server's document root or the desired directory.
 
-7. Ensure that the web server has write permissions to the `flashbriefing` directory and its subdirectories. The application will create folders and files in this directory to store flash briefing content. For instance,
+8. Ensure that the web server has write permissions to the `flashbriefing` directory and its subdirectories. The application will create folders and files in this directory to store flash briefing content. For instance,
 ```
 chown www-data flash-briefing-feed
 ```
-8. Access the application in your web browser using the appropriate URL (e.g., `http://localhost/flash-briefing-skill` or `http://your-domain.com/flash-briefing-skill`).
-9. For using it in Alexa Flash Briefing Skill, you would need this URL to be hosted on a `https://` based environment and it should be publicly accesible.
+9. Access the application in your web browser using the appropriate URL (e.g., `http://localhost/flash-briefing-skill` or `http://your-domain.com/flash-briefing-skill`).
+10. For using it in Alexa Flash Briefing Skill, you would need this URL to be hosted on a `https://` based environment and it should be publicly accesible.
 
 ## Demo App for Web-based Testing
 

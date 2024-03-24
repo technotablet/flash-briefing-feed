@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /alexa/flashBriefing_web/
+RewriteBase /flash-briefing-feed/
 
 RewriteRule ^new$ new.php [L]
 #RewriteRule ^create$ create.php [L]
