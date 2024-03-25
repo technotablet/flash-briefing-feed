@@ -1,0 +1,16 @@
+[
+  {
+    "uid": "urn:uuid:1234-1234-1234-1234",
+    "updateDate": "2024-03-22T00:00:00.0Z",
+    "titleText": "Example 1",
+    "mainText": "This is the first example of the text only flash briefing. Soon, the second example will follow.",
+    "redirectionUrl": "https://www.yourwebsite.com/full-story"
+  },
+  {
+    "uid": "urn:uuid:5678-5678-5678-5678",
+    "updateDate": "2024-03-21T00:00:00.0Z",
+    "titleText": "Example 2",
+    "mainText": "This is the second example of the text only flash briefing. For now that is all. You can try the audio flash briefing also.",
+    "redirectionUrl": "https://www.yourwebsite.com/yesterday-story"
+  }
+]

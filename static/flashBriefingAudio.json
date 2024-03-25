@@ -1,0 +1,10 @@
+[
+  {
+    "uid": "urn:uuid:7890-7890-7890-7890",
+    "updateDate": "2024-03-22T00:00:00.0Z",
+    "titleText": "Audio Example",
+    "mainText": "",
+    "streamUrl": "https://github.com/technotablet/flash-briefing-feed/raw/main/static/flash-briefing-audio-example.mp3",
+    "redirectionUrl": "https://alexa.technotablet.com/flash-briefing-feed"
+  }
+]
